@@ -1,0 +1,15 @@
+[project]
+name = "sb-foo-indexer"
+version = "0.2.0"
+
+dependencies = [
+    "pydantic~=2.8.2",
+    "sb_foo_client"
+]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {"where" = [".."], "include" = ["sb_foo_indexer"]}

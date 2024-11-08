@@ -1,0 +1,13 @@
+[project]
+name = "sb-foo-client"
+version = "0.3.0"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {"where" = [".."], "include" = ["sb_foo_client"]}
+
+[tool.setuptools.package-data]
+sb_foo_client = ["*.py", "things/*.py"]
