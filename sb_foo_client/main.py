@@ -2,7 +2,7 @@ from sb_client_core import ClientCore
 
 
 class FooClient(ClientCore):
-    """FOOO 6"""
+    """FOOO 61"""
     def __init__(self, foo):
         super().__init__(foo=foo)
         self.foo = foo

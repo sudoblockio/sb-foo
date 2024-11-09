@@ -1,0 +1,23 @@
+name: x-copy-sb-foo
+description: CODE-GEN - Copybara workflow on SOT
+on:
+  pullrequest:
+jobs:
+  copybara:
+    if: github.actor != 'sudoblockbot'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Copybara
+      uses: olivr/copybara-action@v1.2.4
+      with:
+        ssh_key: ${{ secrets.SB_BOT_SSH_KEY }}
+        access_token: ${{ secrets.SB_BOT_TOKEN }}
+        sot_repo: sudoblockio/mono-v2
+        destination_repo: sudoblockio/sb-foo
+        committer: sudoblockbot <info@sudoblock.io>
+        push_include: python/chains/sb-foo/**
+        pr_move: '||python/chains/sb-foo'
+        push_exclude: python/chains/sb-foo/.deploy/**

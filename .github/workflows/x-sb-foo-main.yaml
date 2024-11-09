@@ -1,0 +1,17 @@
+name: x-main-sb-foo
+description: CODE-GEN - Main workflow on destination
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - python/chains/sb-foo/**
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install deps
+      run: make install
+    - name: Run the tests
+      run: make test
