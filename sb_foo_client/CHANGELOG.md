@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/sudoblockio/mono-v2/compare/sb-foo-client-v0.3.0...sb-foo-client-v0.4.0) (2024-11-09)
+
+
+### Bug Fixes
+
+* things ([d1caa9f](https://github.com/sudoblockio/mono-v2/commit/d1caa9fce541c70329e41734b7034d2bec060497))
+
 ## [0.3.0](https://github.com/sudoblockio/mono-v2/compare/sb-foo-client-v0.2.3...sb-foo-client-v0.3.0) (2024-11-04)
 
 

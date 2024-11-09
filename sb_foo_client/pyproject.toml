@@ -1,6 +1,6 @@
 [project]
 name = "sb-foo-client"
-version = "0.3.0"
+version = "0.4.0"
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]
