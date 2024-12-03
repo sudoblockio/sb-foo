@@ -1,6 +1,7 @@
 .PHONY: test help
 
 test:  # Run all the tests
+    echo foo
 	pytest tests
 
 install:
